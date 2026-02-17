@@ -262,5 +262,51 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer a {
+  text-decoration: none;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    width: 250px;
+  }
+
+  .coffeeShop-picture figure div {
+    width: 300px;
+  }
+
+  .coffeeShop-picture figure div img {
+    width: 250px;
+  }
+
+  .logo {
+    font-size: small;
+    font-weight: 300;
+  }
+
+  #menu .coffee-picture {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    gap: 10px;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
 }
