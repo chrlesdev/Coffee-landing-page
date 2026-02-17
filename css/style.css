@@ -223,7 +223,7 @@ main {
 }
 
 .coffee-picture figure {
-  width: 280px;
+  width: 190px;
   height: auto;
   border: 2px solid black;
   border-radius: 10px;
@@ -241,7 +241,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
 }
 
 .coffee-picture img {
@@ -308,5 +307,26 @@ footer a {
     gap: 5px;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .coffee-picture figure {
+    width: 300px;
+    flex-shrink: 0;
+    height: auto;
+  }
+
+  .coffee-picture {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .coffee-picture img {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
   }
 }
